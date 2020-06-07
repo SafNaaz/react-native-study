@@ -1,21 +1,12 @@
 import React from 'react';
-import {Text, View} from 'react-native';
-
-function HelloWorldApp() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}>
-      <Text>Hello, world!</Text>
-    </View>
-  );
-}
+import {View, Text} from 'react-native';
 
 const App = () => {
-  return <HelloWorldApp />;
+  return (
+    <View>
+      <Text>Hello World!</Text>
+    </View>
+  );
 };
 
 export default App;
