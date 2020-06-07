@@ -1,26 +1,17 @@
 import React from 'react';
-import {View, Text, Image, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
+import Header from './components/header';
 
 const App = () => {
   return (
     <View style={styles.containor}>
-      <Text style={styles.text}>Hello World!</Text>
-      <Image
-        source={{uri: 'https://randomuser.me/api/portraits/men/1.jpg'}}
-        style={styles.img}
-      />
+      <Header />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  containor: {flex: 1, justifyContent: 'center', alignItems: 'center'},
-  text: {color: 'darkslateblue', fontSize: 20},
-  img: {
-    width: 100,
-    height: 100,
-    borderRadius: 30, //from 0 to 100
-  },
+  containor: {flex: 1},
 });
 
 export default App;
